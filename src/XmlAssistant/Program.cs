@@ -17,19 +17,30 @@ namespace XmlAssistant
                 return;
             }
 
+            try
+            {
+                ExecuteOperation(args);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.WriteLine(Environment.NewLine + "Done.");
+        }
+
+        public static void ExecuteOperation(string[] args)
+        {
             var operation = args[0];
-            switch(operation.ToLower())
+            switch (operation.ToLower())
             {
                 case "keystrokes":
                     Console.WriteLine(KeyStrokeBuilder.BuildFrom(args[1]));
                     break;
 
-                default: 
+                default:
                     Console.WriteLine("Operation not recognized");
                     break;
             }
-            Console.WriteLine("Done.");
-
         }
 
         private static void ShowHelp()
