@@ -34,7 +34,7 @@ namespace XmlAssistant
             switch (operation.ToLower())
             {
                 case "keystrokes":
-                    Console.WriteLine(KeyStrokeBuilder.BuildFrom(args[1]));
+                    Console.WriteLine($"<Actions>{Environment.NewLine}{KeyStrokeBuilder.BuildFrom(args[1])}{Environment.NewLine}</Actions>");
                     break;
 
                 default:

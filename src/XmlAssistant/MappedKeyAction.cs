@@ -2,22 +2,29 @@
 {
     internal class MappedKeyAction
     {
-        private char c;
+        private char character;
 
         public MappedKeyAction(char c)
         {
-            this.c = c;
+            character = c;
         }
 
         public override string ToString()
         {
-            return 
-@$"<MappedKeyAction xsi:type=""KeyStroke"">
+            var name = "" + character;
+            var code = string.Empty;
+
+            if(character == ' ')
+            {
+                name = "SPACE";
+                code = "<Code>57</Code>";
+            }            
+            return
+@$"<MappedKeyAction xsi:type=""Keystroke"">
     <Combo>
-        <Combo>{c}</Combo>
+        <Combo>{name}</Combo>
         <Key>
-            <Key>{c}</Key>
-            <Code>{(int)c}</Code>
+            <Key>{name}</Key>{code}
         </Key>
     </Combo>
 </MappedKeyAction>";
