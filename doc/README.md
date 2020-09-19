@@ -32,54 +32,54 @@ C:\> xmlAssistant keystrokes "/loc"
 Produces the following output: 
 ```xml
 <Actions>
-	<MappedKeyAction xsi:type="Keystroke">
-		<Combo>
-			<Combo>
-				/
-			</Combo>
-			<Key>
-				<Key>
-					/
-				</Key>
-			</Key>
-		</Combo>
-	</MappedKeyAction>
-	<MappedKeyAction xsi:type="Keystroke">
-		<Combo>
-			<Combo>
-				L
-			</Combo>
-			<Key>
-				<Key>
-					L
-				</Key>
-			</Key>
-		</Combo>
-	</MappedKeyAction>
-	<MappedKeyAction xsi:type="Keystroke">
-		<Combo>
-			<Combo>
-				O
-			</Combo>
-			<Key>
-				<Key>
-					O
-				</Key>
-			</Key>
-		</Combo>
-	</MappedKeyAction>
-	<MappedKeyAction xsi:type="Keystroke">
-		<Combo>
-			<Combo>
-				C
-			</Combo>
-			<Key>
-				<Key>
-					C
-				</Key>
-			</Key>
-		</Combo>
-	</MappedKeyAction>
+    <MappedKeyAction xsi:type="Keystroke">
+        <Combo>
+            <Combo>
+                /
+            </Combo>
+            <Key>
+                <Key>
+                    /
+                </Key>
+            </Key>
+        </Combo>
+    </MappedKeyAction>
+    <MappedKeyAction xsi:type="Keystroke">
+        <Combo>
+            <Combo>
+                L
+            </Combo>
+            <Key>
+                <Key>
+                    L
+                </Key>
+            </Key>
+        </Combo>
+    </MappedKeyAction>
+    <MappedKeyAction xsi:type="Keystroke">
+        <Combo>
+            <Combo>
+                O
+            </Combo>
+            <Key>
+                <Key>
+                    O
+                </Key>
+            </Key>
+        </Combo>
+    </MappedKeyAction>
+    <MappedKeyAction xsi:type="Keystroke">
+        <Combo>
+            <Combo>
+                C
+            </Combo>
+            <Key>
+                <Key>
+                    C
+                </Key>
+            </Key>
+        </Combo>
+    </MappedKeyAction>
 </Actions>
 
 ```
